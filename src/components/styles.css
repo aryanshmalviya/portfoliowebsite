@@ -1,0 +1,10 @@
+.radial-gradient {
+    background-image: radial-gradient(circle, #042d51, #052648, #051f40, #041937, #04122f, #0c0c28, #0f0621, #10001b, #120014, #10000c, #0a0004, #000000);
+    /* background-image: radial-gradient(circle, #020425, #030320, #03021b, #020216, #01010f, #050613, #090b17, #0d0f1a, #111727, #111e34, #0e2542, #042d51); */
+    /* background-image: radial-gradient(circle, #000000, #0a0004, #10000c, #120014, #10001b, #0f0621, #0c0c28, #04122f, #041937, #051f40, #052648, #042d51); */
+  }
+
+.navbar-gradient {
+    background-image: radial-gradient(circle, #041937, #04122f, #0c0c28, #0f0621, #10001b, #120014, #10000c, #0a0004, #000000);
+    /* background-image: radial-gradient(circle, #120014, #10001b, #0f0621, #0c0c28, #04122f, #041937, #051f40, #052648, #042d51); */
+  }
