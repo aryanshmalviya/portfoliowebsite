@@ -26,9 +26,9 @@ const Navbar = () => {
     }
   }, [])
 
-    // if (typeof window !== 'undefined') {
-    //   localStorage.setItem('technologies', 'Techs')
-    // }
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('technologies', 'Techs')
+    }
 
   return (
     <nav
@@ -71,7 +71,7 @@ const Navbar = () => {
                 onClick={() => {
                   link.external ?
                       document
-                        .getElementById(`#${link.id}`)
+                        .querySelector(`#${link.id}`)
                         .scrollIntoView({ behavior: 'smooth' })
                         : {}
                 }}
@@ -110,7 +110,7 @@ const Navbar = () => {
                     onClick={() => {
                       link.external ?
                       document
-                        .getElementById(`#${link.id}`)
+                        .querySelector(`#${link.id}`)
                         .scrollIntoView({ behavior: 'smooth' })
                         : {}
                     }}

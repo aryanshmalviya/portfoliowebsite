@@ -22,7 +22,6 @@ const router = createBrowserRouter(
       <Route path="/technologies" element={<Technologies />} />
       <Route path="/mentions" element={<Mentions />} />
       <Route path="/projects" element={<Projects />} />
-      <Route path="/news" element={<News />} />
       <Route path="*" element={<Error404 />} />
     </>,
   ),
