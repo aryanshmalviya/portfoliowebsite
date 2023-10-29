@@ -14,7 +14,7 @@ const Navbar = () => {
   useEffect(() => {
     const currentRoute = window.location.pathname
 
-    if (currentRoute === '/contact') {
+    if (currentRoute === '/') {
       let active = localStorage.getItem('active') ?? 'null'
       setActive(active)
       document
@@ -69,9 +69,11 @@ const Navbar = () => {
               <Link
                 to={link.external ? `/${link.id}` : `/#${link.id}`}
                 onClick={() => {
-                  document
-                    .querySelector(`#${link.id}`)
-                    .scrollIntoView({ behavior: 'smooth' })
+                  link.external ?
+                      document
+                        .querySelector(`#${link.id}`)
+                        .scrollIntoView({ behavior: 'smooth' })
+                        : {}
                 }}
               >
                 {link.title}
@@ -106,9 +108,11 @@ const Navbar = () => {
                   <Link
                     to={link.external ? `/${link.id}` : `/#${link.id}`}
                     onClick={() => {
+                      link.external ?
                       document
                         .querySelector(`#${link.id}`)
                         .scrollIntoView({ behavior: 'smooth' })
+                        : {}
                     }}
                   >
                     {link.title}
