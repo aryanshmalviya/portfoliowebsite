@@ -71,7 +71,7 @@ const Navbar = () => {
                 onClick={() => {
                   link.external ?
                       document
-                        .querySelector(`#${link.id}`)
+                        .getElementById(`#${link.id}`)
                         .scrollIntoView({ behavior: 'smooth' })
                         : {}
                 }}
@@ -110,7 +110,7 @@ const Navbar = () => {
                     onClick={() => {
                       link.external ?
                       document
-                        .querySelector(`#${link.id}`)
+                        .getElementById(`#${link.id}`)
                         .scrollIntoView({ behavior: 'smooth' })
                         : {}
                     }}
