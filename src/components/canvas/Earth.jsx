@@ -59,7 +59,7 @@ const EarthCanvas = () => {
           width: isMobile ? '100vw' : '100vw',
           height: isMobile ? '100vh' : '100vh',
         }}
-        frameLoop="demand"
+        frameloop="demand"
         shadows
         camera={{ position: [20, 3, 5], fov: 25 }}
         gl={{ preserveDrawingBuffer: true }}
