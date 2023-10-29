@@ -12,18 +12,18 @@ const Navbar = () => {
 
   // recuperation de la route
   useEffect(() => {
-    // const currentRoute = window.location.pathname
+    const currentRoute = window.location.pathname
 
-    // if (currentRoute === '/') {
-    //   let active = localStorage.getItem('active') ?? 'null'
-    //   setActive(active)
-    //   document
-    //     .querySelector(`#${active}`)
-    //     ?.scrollIntoView({ behavior: 'smooth' })
-    // } else {
-    //   let route = currentRoute.slice(14)
-    //   setActive(route)
-    // }
+    if (currentRoute === '/') {
+      let active = localStorage.getItem('active') ?? 'null'
+      setActive(active)
+      document
+        .querySelector(`#${active}`)
+        ?.scrollIntoView({ behavior: 'smooth' })
+    } else {
+      let route = currentRoute.slice(14)
+      setActive(route)
+    }
   }, [])
 
     // if (typeof window !== 'undefined') {
