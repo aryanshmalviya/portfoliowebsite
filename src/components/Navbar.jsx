@@ -68,13 +68,13 @@ const Navbar = () => {
             >
               <Link
                 to={link.external ? `/${link.id}` : `/#${link.id}`}
-                onClick={() => {
-                  link.external ?
-                      document
-                        .querySelector(`#${link.id}`)
-                        .scrollIntoView({ behavior: 'smooth' })
-                        : {}
-                }}
+                // onClick={() => {
+                //   link.external ?
+                //       document
+                //         .querySelector(`#${link.id}`)
+                //         .scrollIntoView({ behavior: 'smooth' })
+                //         : {}
+                // }}
               >
                 {link.title}
               </Link>
@@ -107,13 +107,13 @@ const Navbar = () => {
                 >
                   <Link
                     to={link.external ? `/${link.id}` : `/#${link.id}`}
-                    onClick={() => {
-                      link.external ?
-                      document
-                        .querySelector(`#${link.id}`)
-                        .scrollIntoView({ behavior: 'smooth' })
-                        : {}
-                    }}
+                    // onClick={() => {
+                    //   link.external ?
+                    //   document
+                    //     .querySelector(`#${link.id}`)
+                    //     .scrollIntoView({ behavior: 'smooth' })
+                    //     : {}
+                    // }}
                   >
                     {link.title}
                   </Link>
