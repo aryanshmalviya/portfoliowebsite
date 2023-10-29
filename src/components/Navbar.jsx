@@ -14,7 +14,7 @@ const Navbar = () => {
   useEffect(() => {
     const currentRoute = window.location.pathname
 
-    if (currentRoute === '/') {
+    if (currentRoute === '/contact') {
       let active = localStorage.getItem('active') ?? 'null'
       setActive(active)
       document
