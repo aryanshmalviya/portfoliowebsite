@@ -14,11 +14,13 @@ import Projects from './views/projects'
 import Mentions from './views/Mentions'
 import Error404 from './views/errors/Error404'
 import './index.css'
+import { Contact } from './components'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<App />} />
+      <Route path='/Contacts' element={<Contact/>}/>
       <Route path="/technologies" element={<Technologies />} />
       <Route path="/mentions" element={<Mentions />} />
       <Route path="/projects" element={<Projects />} />
