@@ -13,10 +13,6 @@ const Projects = () => {
       items: schoolProjects,
     },
     {
-      title: 'Work Projects',
-      items: workProjects,
-    },
-    {
       title: 'Personal Projects',
       items: personalProjects,
     },

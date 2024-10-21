@@ -53,8 +53,12 @@ import ccicampus from './schools/ccicampus.png'
 import sgsits from "./schools/sgsits.png"
 import vindhyachal from "./schools/vindhyachal.png"
 import ojaswa from "./company/ojaswa.png"
+import xoos from './xoos.png'
+import overcast from './overcast.png'
 
 export {
+  xoos,
+  overcast,
   logo,
   github,
   sgsits,

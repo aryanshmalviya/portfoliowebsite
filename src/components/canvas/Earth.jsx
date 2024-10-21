@@ -67,7 +67,7 @@ const EarthCanvas = () => {
         <Suspense fallback={<CanvasLoader />}>
           <OrbitControls
             autoRotate={true}
-            autoRotateSpeed={isMobile ? 0.5 : 0.5}
+            autoRotateSpeed={isMobile ? 1 : 1}
             enableZoom={false}
             maxPolarAngle={Math.PI / 2}
             minPolarAngle={Math.PI / 2}

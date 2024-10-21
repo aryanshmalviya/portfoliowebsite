@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react'
 
 import { styles } from '../styles'
 import { fadeIn, textVariant } from '../utils/motion'
-import { news } from '../constants/index.js'
 
 const News = () => {
   const [isMobile, setIsMobile] = useState(false)
